@@ -11,7 +11,7 @@ add_edges!(g3, [1, 2, 3], [2, 3, 4]);
 f = ACSetTransformation(g1, g2, V=[1, 2], E=[1])
 g = ACSetTransformation(g2, g3, V=[1, 2, 3], E=[1, 2])
 
-h = compose(f, g)
+h = f ∘ g
 
 println("f: ", f)
 println("g: ", g)
